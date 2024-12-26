@@ -43,7 +43,7 @@ const About = () => {
         {/* Centered Footer Section */}
         <div style={styles.footer}>
           <img 
-            src="https://pbs.twimg.com/profile_images/1636189926273474560/jf6loexH_400x400.jpg" 
+            src="https://pbs.twimg.com/media/D4hqr6zU8AMz30i.jpg" 
             alt="Raghuvaran" 
             style={styles.footerImage}
           />
