@@ -1,7 +1,6 @@
 "use client"; // Add this to make the component a Client Component
 
 import React from 'react';
-import Link from 'next/link';
 
 const Home = () => {
   const handleDownload = () => {
@@ -15,89 +14,51 @@ const Home = () => {
   };
 
   return (
-    <div style={styles.container}>
-      <div style={styles.header}>
-        <h1 style={styles.title}>Welcome to Fogo Paper Casino Betting</h1>
-        <p style={styles.subtitle}>The ultimate platform for exciting paper casino betting games</p>
+    <div className="p-6 bg-gray-100 font-sans">
+      <div className="text-center mb-8">
+        <h1 className="text-4xl font-bold text-gray-800">Welcome to Fogo Paper Casino Betting</h1>
+        <p className="text-lg text-gray-600 mt-2">The ultimate platform for exciting paper casino betting games</p>
       </div>
 
-      <div style={styles.body}>
-        <p style={styles.text}>
+      <div>
+        <p className="text-base text-gray-700 mb-6">
           Join Fogo today and experience the thrill of traditional casino betting with the convenience of modern technology. Whether you're into poker, blackjack, roulette, or dice, we've got you covered with a secure and immersive betting experience.
         </p>
 
-        <div style={styles.downloadSection}>
-          <p style={styles.text}>Download our app to get started:</p>
-          <button onClick={handleDownload} style={styles.downloadButton}>
+        <div className="text-center mb-10">
+          <p className="text-base text-gray-700 mb-4">Download our app to get started:</p>
+          <button
+            onClick={handleDownload}
+            className="bg-red-500 text-white py-3 px-8 text-lg rounded-lg hover:bg-red-600 transition duration-200"
+          >
             Download App
           </button>
         </div>
 
-        <div style={styles.infoSection}>
-          <p style={styles.text}>Explore the wide range of paper casino betting games available on Fogo:</p>
-          <ul style={styles.gameList}>
-            <li>color trading</li>
-            <li>aviator game</li>
-            <li>heads and tails</li>
-            <li>more</li>
+        <div>
+          <p className="text-base text-gray-700 mb-4">Explore the wide range of paper casino betting games available on Fogo:</p>
+          <ul className="space-y-4">
+            <li className="flex items-center bg-white text-gray-800 shadow-md rounded-lg p-4">
+              <span className="text-2xl mr-4"></span> <span className="text-lg font-medium">Color Trading</span>
+            </li>
+            <li className="flex items-center bg-white text-gray-800 shadow-md rounded-lg p-4">
+              <span className="text-2xl mr-4"></span> <span className="text-lg font-medium">Aviator Game</span>
+            </li>
+            <li className="flex items-center bg-white text-gray-800 shadow-md rounded-lg p-4">
+              <span className="text-2xl mr-4"></span> <span className="text-lg font-medium">Heads and Tails</span>
+            </li>
+            <li className="flex items-center bg-white text-gray-800 shadow-md rounded-lg p-4">
+              <span className="text-2xl mr-4"></span> <span className="text-lg font-medium">More</span>
+            </li>
           </ul>
         </div>
 
-        <p style={styles.text}>Start betting and make your moves on the go with Fogo's mobile app.</p>
+        <p className="text-base text-gray-700 mt-8">
+          Start betting and make your moves on the go with Fogo's mobile app.
+        </p>
       </div>
     </div>
   );
-};
-
-const styles = {
-  container: {
-    padding: '20px',
-    backgroundColor: '#f7f7f7',
-    fontFamily: 'Arial, sans-serif',
-  },
-  header: {
-    textAlign: 'center',
-    marginBottom: '20px',
-  },
-  title: {
-    fontSize: '30px',
-    fontWeight: 'bold',
-    color: '#333',
-  },
-  subtitle: {
-    fontSize: '18px',
-    color: '#666',
-    marginTop: '5px',
-  },
-  body: {
-    marginTop: '20px',
-  },
-  text: {
-    fontSize: '16px',
-    color: '#444',
-    marginBottom: '15px',
-  },
-  downloadSection: {
-    textAlign: 'center',
-    marginBottom: '30px',
-  },
-  downloadButton: {
-    backgroundColor: '#ff6347', // Tomato color for the button
-    color: '#fff',
-    padding: '15px 30px',
-    fontSize: '18px',
-    border: 'none',
-    borderRadius: '8px',
-    cursor: 'pointer',
-  },
-  infoSection: {
-    marginTop: '20px',
-  },
-  gameList: {
-    listStyleType: 'none',
-    padding: '0',
-    fontSize: '16px',
-  },
 };
 
 export default Home;
