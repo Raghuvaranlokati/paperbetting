@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const Home = () => {
   const handleDownload = () => {
-    const fileUrl = '/path-to-your-app-file.zip'; // Replace with the actual file URL (e.g., APK, EXE, etc.)
+    const fileUrl = '/casinopaper-bet.apk'; // Replace with the actual file URL (e.g., APK, EXE, etc.)
     const a = document.createElement('a');
     a.href = fileUrl;
     a.download = 'FogoCasinoApp'; // Customize with your app's name
